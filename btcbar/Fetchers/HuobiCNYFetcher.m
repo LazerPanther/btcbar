@@ -40,7 +40,7 @@
 // Initiates an asyncronous HTTP connection
 - (void)requestUpdate
 {
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://market.huobi.com/staticmarket/detail.html"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://api.huobi.com/usdmarket/detail_btc_json.js"]];
 
     // Set the request's user agent
     [request addValue:@"btcbar/2.0 (HuobiCNYFetcher)" forHTTPHeaderField:@"User-Agent"];
@@ -96,12 +96,12 @@
     // Results parsed successfully from JSON
     if (results)
     {
-        NSNumber *ticker = [results objectForKey:@"p_new"];
+        NSNumber *ticker = [results objectForKey:@"p_last"];
         if (ticker) {
             NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
             NSString *resultsStatus = [numberFormatter stringFromNumber:ticker];
             resultsStatus = [NSString stringWithFormat:@"¥%@", resultsStatus];
-            
+
             self.error = nil;
             self.ticker = resultsStatus;
         }
