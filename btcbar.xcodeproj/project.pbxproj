@@ -202,7 +202,7 @@
 		830CE085171B6C3E00DDD525 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = nearengine;
 			};
 			buildConfigurationList = 830CE088171B6C3E00DDD525 /* Build configuration list for PBXProject "btcbar" */;
@@ -282,6 +282,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -334,6 +335,7 @@
 				GCC_PREFIX_HEADER = "btcbar/btcbar-Prefix.pch";
 				INFOPLIST_FILE = "btcbar/btcbar-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nearengine.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -347,6 +349,7 @@
 				GCC_PREFIX_HEADER = "btcbar/btcbar-Prefix.pch";
 				INFOPLIST_FILE = "btcbar/btcbar-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nearengine.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
