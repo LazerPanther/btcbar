@@ -27,6 +27,7 @@
 
     // Pass each ticker object into a dictionary, get first updates
     tickers = [NSMutableArray arrayWithObjects:
+               [[BitcoinAverageUSDFetcher alloc] init],
                [[BitStampUSDFetcher alloc] init],
                [[BTCeUSDFetcher alloc] init],
                [[CoinbaseUSDFetcher alloc] init],
