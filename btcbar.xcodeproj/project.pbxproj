@@ -22,6 +22,7 @@
 		B65127471A71A1BB00FB6A24 /* OKCoinCNYFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B65127461A71A1BB00FB6A24 /* OKCoinCNYFetcher.m */; };
 		B662833B1A712EBB00520512 /* BitFinexUSDFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B662833A1A712EBB00520512 /* BitFinexUSDFetcher.m */; };
 		B662833E1A715EFB00520512 /* WinkDexUSDFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B662833D1A715EFB00520512 /* WinkDexUSDFetcher.m */; };
+		BDD7DE531BF4517B00A4AEDD /* BitcoinAverageUSDFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD7DE521BF4517B00A4AEDD /* BitcoinAverageUSDFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,8 @@
 		B662833A1A712EBB00520512 /* BitFinexUSDFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BitFinexUSDFetcher.m; path = Fetchers/BitFinexUSDFetcher.m; sourceTree = "<group>"; };
 		B662833C1A715EFB00520512 /* WinkDexUSDFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WinkDexUSDFetcher.h; path = Fetchers/WinkDexUSDFetcher.h; sourceTree = "<group>"; };
 		B662833D1A715EFB00520512 /* WinkDexUSDFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WinkDexUSDFetcher.m; path = Fetchers/WinkDexUSDFetcher.m; sourceTree = "<group>"; };
+		BDD7DE521BF4517B00A4AEDD /* BitcoinAverageUSDFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BitcoinAverageUSDFetcher.m; path = Fetchers/BitcoinAverageUSDFetcher.m; sourceTree = "<group>"; };
+		BDD7DE541BF4519D00A4AEDD /* BitcoinAverageUSDFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BitcoinAverageUSDFetcher.h; path = Fetchers/BitcoinAverageUSDFetcher.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 		838F4297182E5A5000B4FC58 /* Fetchers */ = {
 			isa = PBXGroup;
 			children = (
+				BDD7DE541BF4519D00A4AEDD /* BitcoinAverageUSDFetcher.h */,
+				BDD7DE521BF4517B00A4AEDD /* BitcoinAverageUSDFetcher.m */,
 				83C3E7411859700100FA2921 /* BitStampUSDFetcher.h */,
 				83C3E7421859700100FA2921 /* BitStampUSDFetcher.m */,
 				B65127451A71A1BB00FB6A24 /* OKCoinCNYFetcher.h */,
@@ -237,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD7DE531BF4517B00A4AEDD /* BitcoinAverageUSDFetcher.m in Sources */,
 				83C3E7491859700100FA2921 /* BitStampUSDFetcher.m in Sources */,
 				B662833B1A712EBB00520512 /* BitFinexUSDFetcher.m in Sources */,
 				830CE09D171B6C3E00DDD525 /* main.m in Sources */,
